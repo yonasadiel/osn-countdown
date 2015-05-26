@@ -1,0 +1,78 @@
+body {
+  padding-top: 50px;
+  background-image: url('../../images/bg-pattern-light.png');
+}
+
+.container {
+  padding: 20px 15px;
+}
+
+  .header img{
+    max-width: 100%;
+    max-height: 20%;
+  }
+
+  #logo-left{
+    
+  }
+
+  #logo-center{
+    text-align: center;
+  }
+
+  #logo-right{
+    text-align: right;
+  }
+
+.content{
+  text-align: center;
+  margin: 0 0 3em 0;
+}
+  .content h1{
+    font-weight: bold;
+  }
+  
+  .hexaflip-container {
+    margin: 3em auto 4em auto;
+    -webkit-filter: drop-shadow(20px 20px 13px rgba(0,0,0,0.3));
+    -moz-filter: drop-shadow(20px 20px 13px rgba(0,0,0,0.3));
+    filter: drop-shadow(20px 20px 13px rgba(0,0,0,0.3));
+  }
+  
+  #start-btn{
+  }
+  
+  #pause-btn{
+    display: none;
+  }
+  
+  #resume-btn{
+    display: none;
+  }
+  
+  #stop-btn{
+    display: none;
+  }
+
+.footer{
+  font-size: 0.8em;
+  margin: 3em 0 0 0;
+}
+
+  .footer #copyright{
+    text-align: center;
+    padding: 1em 0 0 0;
+    margin: 0 0 1em 0;    
+  }
+
+  .footer #powered-by{
+    text-align: center;
+  }
+  
+  .footer #powered-by-logo{
+    text-align: center;
+  }
+  
+    /*.footer #powered-by-logo img{
+      max-height: 2em;
+    }*/

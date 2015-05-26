@@ -1,0 +1,36 @@
+#hexaflip-demo3 {
+  margin-bottom: 4rem;
+}
+
+#hexaflip-demo3 .hexaflip-cube {
+  opacity: 0.96;
+  filter: alpha(opacity=96);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=96)";
+}
+
+#hexaflip-demo3 .hexaflip-cube .hexaflip-left,
+#hexaflip-demo3 .hexaflip-cube .hexaflip-right {
+  background-color: #222 !important;
+}
+
+#hexaflip-demo3 .hexaflip-cube > div {
+  font-weight: 100;
+  text-shadow: none;
+}
+
+#hexaflip-demo3 .hexaflip-cube > div:nth-child(1n+1) {
+  background-color: #069ad5;
+}
+
+#hexaflip-demo3 .hexaflip-cube > div:nth-child(2n+2) {
+  background-color: #fc5215;
+}
+
+#hexaflip-demo3 .hexaflip-cube > div:nth-child(3n+3) {
+  background-color: #30b71d;
+}
+
+#hexaflip-demo3 .hexaflip-cube > div:nth-child(4n+4) {
+  background-color: red;
+}
+
