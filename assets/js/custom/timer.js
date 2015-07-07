@@ -1,6 +1,6 @@
 var OSNCountdown = {
   lastTime: null,
-  remainingMilis: 0,
+  remainingMilis: 0.0,
   timer: null,
   hexa: null,
   state: '',
@@ -15,7 +15,7 @@ var OSNCountdown = {
     
     //initialization
     hexa = hexaElmt;
-    remainingMilis = 0;
+    remainingMilis = 0.0;
     STATE_PAUSED = 'paused';
     STATE_TICKING = 'ticking';
   },
@@ -26,7 +26,7 @@ var OSNCountdown = {
       var instance = this;
       instance.lastTime = new Date();
       
-      remainingMilis  = initialTime;
+      remainingMilis  = initialTime + 0.0;
       hexa.setValue(this.formatTime(remainingMilis));
       timer = setInterval(function(){instance.countdown()}, 1000);
     }
@@ -76,7 +76,7 @@ var OSNCountdown = {
       $('#stop-btn').css('display', 'none');
       instance.stop();
     } else {
-      remainingMilis -= currentTime.getTime() - instance.lastTime.getTime();
+      remainingMilis -= ((currentTime.getTime() - instance.lastTime.getTime()) / 1000.0);
       instance.lastTime = currentTime;
       if(remainingMilis <= 3600) {
         
@@ -84,7 +84,7 @@ var OSNCountdown = {
     }
     
     //update view
-    hexa.setValue(this.formatTime(remainingMilis));
+    hexa.setValue(this.formatTime(Math.round(remainingMilis)));
   },
   
   formatTime: function(milis) {
