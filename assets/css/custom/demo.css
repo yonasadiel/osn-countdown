@@ -18,19 +18,19 @@
   text-shadow: none;
 }
 
-#hexaflip-demo3 .hexaflip-cube > div:nth-child(1n+1) {
+#hexaflip-demo3 .hexaflip-cube .hexaflip-side:nth-child(1n+1) {
   background-color: #069ad5;
 }
 
-#hexaflip-demo3 .hexaflip-cube > div:nth-child(2n+2) {
+#hexaflip-demo3 .hexaflip-cube .hexaflip-side:nth-child(2n+2) {
   background-color: #fc5215;
 }
 
-#hexaflip-demo3 .hexaflip-cube > div:nth-child(3n+3) {
+#hexaflip-demo3 .hexaflip-cube .hexaflip-side:nth-child(3n+3) {
   background-color: #30b71d;
 }
 
-#hexaflip-demo3 .hexaflip-cube > div:nth-child(4n+4) {
+#hexaflip-demo3 .hexaflip-cube .hexaflip-side:nth-child(4n+4) {
   background-color: red;
 }
 
